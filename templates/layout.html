@@ -9,7 +9,7 @@
     <link rel="shortcut icon" href="{{ url_for('static', filename='img/favicon.ico') }}">
     <link rel="stylesheet" href="{{ url_for('static', filename='css/base.css') }}">
     <link rel="icon" href="{{ url_for('static', filename='img/icons/vtes.svg') }}">
-	<scrip src="{{ url_for('static', filename='js/dC.js') }}"></script>
+	<script src="{{ url_for('static', filename='js/dC.js') }}"></script>
     <title>Codex of the Damned</title>
 </head>
 <body>
@@ -29,6 +29,9 @@
         </ul>
     </nav>
 </header>
+<div id="card-modal" class="modal" onclick="this.style.display='none'">
+        <img class="modal-content" id="card-image">
+</div>
 <article>
     {% block content %}{% endblock %}
 </article>
