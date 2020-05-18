@@ -11,7 +11,7 @@ def template_strategy():
     return render_template('strategy.html')
 
 @app.route("/test")
-def template_strategy():
+def template_test():
     return render_template('template.html', my_string="Noooo!", my_list=[2,5,6,7])
 
 if __name__ == '__main__':
