@@ -22,7 +22,7 @@
     <nav role="navigation">
         <ul>
             <li><a href="/">{{ _('Home') }}</a></li>
-            <li><a href="/{% if language is not None %}{{ language }}{% endif %}strategy">{{ _('Strategy') }}</a></li>
+            <li><a href="{% if lang_code is not None %}/{{ lang_code }}{% endif %}/strategy">{{ _('Strategy') }}</a></li>
             <li><a href="/archetypes">{{ _('Archetypes') }}</a></li>
             <li><a href="best-cards/index.html">{{ _('Best Cards') }}</a></li>
             <li><a href="deck-search/index.html">{{ _('Deck Search') }}</a></li>
