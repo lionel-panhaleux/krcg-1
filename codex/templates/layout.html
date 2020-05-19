@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en-GB">
+<html lang="{{ language }}">
 <head>
 	<meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
@@ -21,12 +21,12 @@
     </a>
     <nav role="navigation">
         <ul>
-            <li><a href="/">Home</a></li>
-            <li><a href="/strategy">Strategy</a></li>
-            <li><a href="/archetypes">Archetypes</a></li>
-            <li><a href="best-cards/index.html">Best Cards</a></li>
-            <li><a href="deck-search/index.html">Deck Search</a></li>
-            <li><a href="card-search/index.html">Card Search</a></li>
+            <li><a href="/">{{ _('Home') }}</a></li>
+            <li><a href="/{% if language is not None %}{{ language }}{% endif %}strategy">{{ _('Strategy') }}</a></li>
+            <li><a href="/archetypes">{{ _('Archetypes') }}</a></li>
+            <li><a href="best-cards/index.html">{{ _('Best Cards') }}</a></li>
+            <li><a href="deck-search/index.html">{{ _('Deck Search') }}</a></li>
+            <li><a href="card-search/index.html">{{ _('Card Search') }}</a></li>
         </ul>
     </nav>
 </header>
