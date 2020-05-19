@@ -5,7 +5,7 @@ class BaseConfig(object):
     TESTING = False
     # Translation
     SUPPORTED_LANGUAGES = {"en": "English", "fr": "Francais"}
-    BABEL_DEFAULT_LOCALE = "fr"
+    BABEL_DEFAULT_LOCALE = "en"
     BABEL_DEFAULT_TIMEZONE = "UTC"
 
 class DevelopmentConfig(BaseConfig):

@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="{{ language }}">
 <head>
+	{% block head %}
 	<meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
     <meta property="og:image" content="{{ url_for('static', filename='img/codex.jpg') }}"/>
@@ -12,18 +13,19 @@
 	<script src="{{ url_for('static', filename='js/dC.js') }}"></script>
 	<script src="{% block script %}{% endblock %}"></script>
     <title>Codex of the Damned</title>
+	{% endblock %}
 </head>
 <body>
 <header role="banner">
-    <a href="/" class="site-logo">
+    <a href="{{ url_for('index') }}" class="site-logo">
         <img src="{{ url_for('static', filename='img/icons/vtes.svg') }}" alt="Codex of the Damned">
         <h1>Codex of the Damned</h1>
     </a>
     <nav role="navigation">
         <ul>
-            <li><a href="/">{{ _('Home') }}</a></li>
-            <li><a href="{% if lang_code is not None %}/{{ lang_code }}{% endif %}/strategy">{{ _('Strategy') }}</a></li>
-            <li><a href="/archetypes">{{ _('Archetypes') }}</a></li>
+            <li><a href="{{ url_for('index') }}">{{ _('Home') }}</a></li>
+            <li><a href="{{ url_for('strategy.index') }}">{{ _('Strategy') }}</a></li>
+            <li><a href="{# {{ url_for('archetypes.index') }} ##}">{{ _('Archetypes') }}</a></li>
             <li><a href="best-cards/index.html">{{ _('Best Cards') }}</a></li>
             <li><a href="deck-search/index.html">{{ _('Deck Search') }}</a></li>
             <li><a href="card-search/index.html">{{ _('Card Search') }}</a></li>
@@ -40,8 +42,7 @@
     {% block footer %}
     <img src="{{ url_for('static', filename='img/icons/dark-pack.png') }}">
     <p>
-        Portions of the materials are the copyrights and trademarks of Paradox Interactive AB,
-        and are used with permission. All rights reserved. For more information please visit
+        {{ _('Portions of the materials are the copyrights and trademarks of Paradox Interactive AB, and are used with permission. All rights reserved. For more information please visit') }}
         <a target="_blank" href="http://white-wolf.com">white-wolf.com</a>.
     </p>
     {% endblock %}
