@@ -197,8 +197,8 @@
         The second step, before adding more cards to the deck, is to define the four pillars of the deck strategy:
         <ul>
             <li><strong>Payload:</strong> how the deck delivers pool damage to its prey.
-                Does it <a href="fundamentals.html#bleed">bleed</a>?
-                Use <a href="fundamentals.html#politics">politics</a>?
+                Does it <a href="{{ url_for('template_strategy', sub_page='fundamentals', _anchor='bleed') }}">bleed</a>?
+                Use <a href="{{ url_for('template_strategy', sub_page='fundamentals', _anchor='politics') }}">politics</a>?
                 Some other pool damage device like
                 <span class="card" onclick="dC('anarchrevolt')">Anarch Revolt</span> or
                 <span class="card" onclick="dC('dragonbound')">Dragonbound</span>?
@@ -211,12 +211,12 @@
             </li>
             <li>
                 <strong>Defense:</strong> how the deck avoids to lose.
-                <a href="bloat.html#bloat">Bloating</a> is the most generic defense:
+                <a href="{{ url_for('template_strategy', sub_page='bloat', _anchor='bloat') }}">Bloating</a> is the most generic defense:
                 gaining pool works against all offensive strategies. Most decks use a modicum of bloat,
                 some rely on a heavy bloat as their sole defense.
                 <em>Blocking</em> is the second most generic defense: most offensive strategies use actions.
                 More focused defensive tools are often used against the most widespread offensive strategies:
-                <a href="fundamentals.html#bounce">Bounces</a> or <em>Reduction</em> against bleed,
+                <a href="{{ url_for('template_strategy', sub_page='fundamentals', _anchor='bounce') }}">Bounces</a> or <em>Reduction</em> against bleed,
                 <span class="card" onclick="dC('delayingtactics')">Delaying Tactics</span> and
                 <span class="card" onclick="dC('poisonpill')">Poison Pill</span>
                 against politics.
@@ -224,9 +224,9 @@
             <li>
                 <strong>Combat Management:</strong> how the deck deals with minion combats.
                 If it does not plan to block, <em>support allies</em> to block rush actions can be enough.
-                Some decks plan to avoid combat and use <a href="combat.html#defense">combat ends</a> effects
+                Some decks plan to avoid combat and use <a href="{{ url_for('template_strategy', sub_page='combat', _anchor='defense') }}">combat ends</a> effects
                 when it cannot be avoided.
-                Others plan to use combats to optimize <a href="combat.html#bruise">bruise</a> in their favor.
+                Others plan to use combats to optimize <a href="{{ url_for('template_strategy', sub_page='combat', _anchor='bruise') }}">bruise</a> in their favor.
             </li>
         </ul>
     </p>
