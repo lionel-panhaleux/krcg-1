@@ -1,4 +1,4 @@
-{% extends "layout.html" %}
+{% extends "layout') }}" %}
 
 {% block head %}
     {{ super() }}
@@ -11,7 +11,7 @@
     <p>
         Here is a list of <strong>Vampire: the Eternal Struggle</strong> deck archetypes.
         Every archetype is presented with
-        <a target="_blank" href="http://www.vekn.fr/decks/twd.htm">Tournament Winning Deck Archive (TWDA)</a>
+        <a target="_blank" href="{{ url_for('archetypes.index', sub_page='http://www.vekn.fr/decks/twd.htm">Tournament Winning Deck Archive (TWDA)</a>
         deck list examples, main variations, and a play guide.
     </p>
     <p>
@@ -21,7 +21,7 @@
     </p>
     <p>
         If you're searching for other ideas or references, the
-        <a target="_blank" href="https://drive.google.com/drive/folders/0B32R3iejqMPTaXNDd2d1b01lR1k">Bibliodèque</a>
+        <a target="_blank" href="{{ url_for('archetypes.index', sub_page='https://drive.google.com/drive/folders/0B32R3iejqMPTaXNDd2d1b01lR1k">Bibliodèque</a>
         is a French project based on the TWDA that references 99 archetypes with example decklists,
         to help people building decks for their casual play or tournaments.
     </p>
@@ -33,119 +33,119 @@
                 <td>(Toolbox)</td>
             </tr>
             <tr>
-                <td><a href="akunanse-wall.html">Akunanse Wall</a></td>
+                <td><a href="{{ url_for('archetypes.index', sub_page='akunanse-wall') }}">Akunanse Wall</a></td>
                 <td>(Wall)</td>
             </tr>
             <tr>
-                <td><a href="amaravati-politics.html">Amaravati Politics</a></td>
+                <td><a href="{{ url_for('archetypes.index', sub_page='amaravati-politics') }}">Amaravati Politics</a></td>
                 <td>(Politics)</td>
             </tr>
             <tr>
-                <td><a href="anti-ventrue-grinder.html">Anti ventrue Grinder</a></td>
+                <td><a href="{{ url_for('archetypes.index', sub_page='anti-ventrue-grinder') }}">Anti ventrue Grinder</a></td>
                 <td>(Toolbox)</td>
             </tr>
             <tr>
-                <td><a href="baltimore-purge.html">Baltimore Purge</a></td>
+                <td><a href="{{ url_for('archetypes.index', sub_page='baltimore-purge') }}">Baltimore Purge</a></td>
                 <td>(Special)</td>
             </tr>
             <tr>
-                <td><a href="bima-dominate.html">Bima Dominate</a></td>
+                <td><a href="{{ url_for('archetypes.index', sub_page='bima-dominate') }}">Bima Dominate</a></td>
                 <td>(Swarm Bleed)</td>
             </tr>
             <tr>
-                <td><a href="black-hand.html">Black Hand</a></td>
+                <td><a href="{{ url_for('archetypes.index', sub_page='black-hand') }}">Black Hand</a></td>
                 <td>(Toolbox)</td>
             </tr>
             <tr>
-                <td><a href="cats.html">Cats</a></td>
+                <td><a href="{{ url_for('archetypes.index', sub_page='cats') }}">Cats</a></td>
                 <td>(Wall / Toolbox)</td>
             </tr>
             <tr>
-                <td><a href="council-of-doom.html">Council of Doom</a></td>
+                <td><a href="{{ url_for('archetypes.index', sub_page='council-of-doom') }}">Council of Doom</a></td>
                 <td>(Bleed & Politics)</td>
             </tr>
             <tr>
-                <td><a href="cybelotron.html">Cybelotron</a></td>
+                <td><a href="{{ url_for('archetypes.index', sub_page='cybelotron') }}">Cybelotron</a></td>
                 <td>(Special)</td>
             </tr>
             <tr>
-                <td><a href="daughters-politics.html">Daughters Politics</a></td>
+                <td><a href="{{ url_for('archetypes.index', sub_page='daughters-politics') }}">Daughters Politics</a></td>
                 <td>(Politics)</td>
             </tr>
             <tr>
-                <td><a href="death-star.html">Death Star</a></td>
+                <td><a href="{{ url_for('archetypes.index', sub_page='death-star') }}">Death Star</a></td>
                 <td>(Politics)</td>
             </tr>
             <tr>
-                <td><a href="dmitris-big-band.html">Dmitri's Big Band</a></td>
+                <td><a href="{{ url_for('archetypes.index', sub_page='dmitris-big-band') }}">Dmitri's Big Band</a></td>
                 <td>(Toolbox)</td>
             </tr>
             <tr>
-                <td><a href="emerald-legion.html">Emerald Legion</a></td>
+                <td><a href="{{ url_for('archetypes.index', sub_page='emerald-legion') }}">Emerald Legion</a></td>
                 <td>(Toolbox)</td>
             </tr>
             <tr>
-                <td><a href="euro-brujah.html">Euro Brujah</a></td>
+                <td><a href="{{ url_for('archetypes.index', sub_page='euro-brujah') }}">Euro Brujah</a></td>
                 <td>(Toolbox)</td>
             </tr>
             <tr>
-                <td><a href="girls-will-find-inner-circles.html">Girls Will Find Inner Circle</a></td>
+                <td><a href="{{ url_for('archetypes.index', sub_page='girls-will-find-inner-circles') }}">Girls Will Find Inner Circle</a></td>
                 <td>(Stealth & Bleed)</td>
             </tr>
             <tr>
-                <td><a href="goratrix-high-tower.html">Goratrix High Tower</a></td>
+                <td><a href="{{ url_for('archetypes.index', sub_page='goratrix-high-tower') }}">Goratrix High Tower</a></td>
                 <td>(Wall)</td>
             </tr>
             <tr>
-                <td><a href="guruhi-rush.html">Guruhi Rush</a></td>
+                <td><a href="{{ url_for('archetypes.index', sub_page='guruhi-rush') }}">Guruhi Rush</a></td>
                 <td>(Rush / Toolbox)</td>
             </tr>
             <tr>
-                <td><a href="hunters.html">Hunters</a></td>
+                <td><a href="{{ url_for('archetypes.index', sub_page='hunters') }}">Hunters</a></td>
                 <td>(Toolbox)</td>
             </tr>
             <tr>
-                <td><a href="ishtarri-politics.html">Ishtarri Politics</a></td>
+                <td><a href="{{ url_for('archetypes.index', sub_page='ishtarri-politics') }}">Ishtarri Politics</a></td>
                 <td>(Politics)</td>
             </tr>
             <tr>
-                <td><a href="jost-powerbleed.html">Jost Powerbleed</a></td>
+                <td><a href="{{ url_for('archetypes.index', sub_page='jost-powerbleed') }}">Jost Powerbleed</a></td>
                 <td>(Powerbleed)</td>
             </tr>
             <tr>
-                <td><a href="khazars-diary.html">Khazar's Diary</a></td>
+                <td><a href="{{ url_for('archetypes.index', sub_page='khazars-diary') }}">Khazar's Diary</a></td>
                 <td>(Toolbox)</td>
             </tr>
             <tr>
-                <td><a href="kiasyd-stealth-bleed.html">Kiasyd Stealth & Bleed</a></td>
+                <td><a href="{{ url_for('archetypes.index', sub_page='kiasyd-stealth-bleed') }}">Kiasyd Stealth & Bleed</a></td>
                 <td>(Stealth & Bleed)</td>
             </tr>
             <tr>
-                <td><a href="lasombra-nocturn.html">Lasombra Nocturn</a></td>
+                <td><a href="{{ url_for('archetypes.index', sub_page='lasombra-nocturn') }}">Lasombra Nocturn</a></td>
                 <td>(Stealth & Bleed)</td>
             </tr>
             <tr>
-                <td><a href="lutz-politics.html">Lutz Politics</a></td>
+                <td><a href="{{ url_for('archetypes.index', sub_page='lutz-politics') }}">Lutz Politics</a></td>
                 <td>(Bleed & Politics)</td>
             </tr>
             <tr>
-                <td><a href="madness-reversal.html">Madness Reversal</a></td>
+                <td><a href="{{ url_for('archetypes.index', sub_page='madness-reversal') }}">Madness Reversal</a></td>
                 <td>(Special)</td>
             </tr>
             <tr>
-                <td><a href="mind-rape.html">Mind Rape</a></td>
+                <td><a href="{{ url_for('archetypes.index', sub_page='mind-rape') }}">Mind Rape</a></td>
                 <td>(Special)</td>
             </tr>
             <tr>
-                <td><a href="mistress.html">Mistress</a></td>
+                <td><a href="{{ url_for('archetypes.index', sub_page='mistress') }}">Mistress</a></td>
                 <td>(Bleed & Politics)</td>
             </tr>
             <tr>
-                <td><a href="nananimalism.html">Nananimalism</a></td>
+                <td><a href="{{ url_for('archetypes.index', sub_page='nananimalism') }}">Nananimalism</a></td>
                 <td>(Rush)</td>
             </tr>
             <tr>
-                <td><a href="nephandii.html">Nephandii</a></td>
+                <td><a href="{{ url_for('archetypes.index', sub_page='nephandii') }}">Nephandii</a></td>
                 <td>(Toolbox)</td>
             </tr>
         </tbody>
@@ -153,91 +153,91 @@
     <table class="wide-column">
         <tbody>
             <tr>
-                <td><a href="nosferatu-royalty.html">Nosferatu Royalty</a></td>
+                <td><a href="{{ url_for('archetypes.index', sub_page='nosferatu-royalty') }}">Nosferatu Royalty</a></td>
                 <td>(Toolbox)</td>
             </tr>
             <tr>
-                <td><a href="rachel-madness.html">Rachel Madness</a></td>
+                <td><a href="{{ url_for('archetypes.index', sub_page='rachel-madness') }}">Rachel Madness</a></td>
                 <td>(Stealth & Bleed)</td>
             </tr>
             <tr>
-                <td><a href="ravnos-clown-car.html">Ravnos Clown Car</a></td>
+                <td><a href="{{ url_for('archetypes.index', sub_page='ravnos-clown-car') }}">Ravnos Clown Car</a></td>
                 <td>(Swarm Politics)</td>
             </tr>
             <tr>
-                <td><a href="renegade-assault.html">Renegade Assault</a></td>
+                <td><a href="{{ url_for('archetypes.index', sub_page='renegade-assault') }}">Renegade Assault</a></td>
                 <td>(Rush)</td>
             </tr>
             <tr>
-                <td><a href="saulot-and-friends.html">Saulot & Friends</a></td>
+                <td><a href="{{ url_for('archetypes.index', sub_page='saulot-and-friends') }}">Saulot & Friends</a></td>
                 <td>(Wall)</td>
             </tr>
             <tr>
-                <td><a href="scout.html">Scout</a></td>
+                <td><a href="{{ url_for('archetypes.index', sub_page='scout') }}">Scout</a></td>
                 <td>(Politics)</td>
             </tr>
             <tr>
-                <td><a href="shambling-hordes.html">Shambling Hordes</a></td>
+                <td><a href="{{ url_for('archetypes.index', sub_page='shambling-hordes') }}">Shambling Hordes</a></td>
                 <td>(Rush)</td>
             </tr>
             <tr>
-                <td><a href="spirit-marionette.html">Spirit Marionette</a></td>
+                <td><a href="{{ url_for('archetypes.index', sub_page='spirit-marionette') }}">Spirit Marionette</a></td>
                 <td>(Special)</td>
             </tr>
             <tr>
-                <td><a href="stanislava.html">Stanislava</a></td>
+                <td><a href="{{ url_for('archetypes.index', sub_page='stanislava') }}">Stanislava</a></td>
                 <td>(Bleed & Politics)</td>
             </tr>
             <tr>
-                <td><a href="team-jacob.html">Team Jacob</a></td>
+                <td><a href="{{ url_for('archetypes.index', sub_page='team-jacob') }}">Team Jacob</a></td>
                 <td>(Stealth & Bleed)</td>
             </tr>
             <tr>
-                <td><a href="the-bleeding-vignes.html">The Bleeding Vignes</a></td>
+                <td><a href="{{ url_for('archetypes.index', sub_page='the-bleeding-vignes') }}">The Bleeding Vignes</a></td>
                 <td>(Powerbleed)</td>
             </tr>
             <tr>
-                <td><a href="the-dark-side-of-politics.html">The Dark Side of Politics</a></td>
+                <td><a href="{{ url_for('archetypes.index', sub_page='the-dark-side-of-politics') }}">The Dark Side of Politics</a></td>
                 <td>(Politics)</td>
             </tr>
             <tr>
-                <td><a href="the-unnamed.html">The unnamed</a></td>
+                <td><a href="{{ url_for('archetypes.index', sub_page='the-unnamed') }}">The unnamed</a></td>
                 <td>(Stealth & Bleed)</td>
             </tr>
             <tr>
-                <td><a href="tupdogs.html">Tupdogs</a></td>
+                <td><a href="{{ url_for('archetypes.index', sub_page='tupdogs') }}">Tupdogs</a></td>
                 <td>(Rush)</td>
             </tr>
             <tr>
-                <td><a href="tzimisce-toolbox.html">Tzimisce Toolbox</a></td>
+                <td><a href="{{ url_for('archetypes.index', sub_page='tzimisce-toolbox') }}">Tzimisce Toolbox</a></td>
                 <td>(Toolbox)</td>
             </tr>
             <tr>
-                <td><a href="tzimisce-wall.html">Tzimisce Wall</a></td>
+                <td><a href="{{ url_for('archetypes.index', sub_page='tzimisce-wall') }}">Tzimisce Wall</a></td>
                 <td>(Wall)</td>
             </tr>
             <tr>
-                <td><a href="ventrue-royalty.html">Ventrue Royalty</a></td>
+                <td><a href="{{ url_for('archetypes.index', sub_page='ventrue-royalty') }}">Ventrue Royalty</a></td>
                 <td>(Toolbox)</td>
             </tr>
             <tr>
-                <td><a href="war-chantry.html">War Chantry</a></td>
+                <td><a href="{{ url_for('archetypes.index', sub_page='war-chantry') }}">War Chantry</a></td>
                 <td>(Toolbox)</td>
             </tr>
             <tr>
-                <td><a href="war-ghouls.html">War Ghouls</a></td>
+                <td><a href="{{ url_for('archetypes.index', sub_page='war-ghouls') }}">War Ghouls</a></td>
                 <td>(Rush)</td>
             </tr>
             <tr>
-                <td><a href="weenie-aus.html">Weenie AUS</a></td>
+                <td><a href="{{ url_for('archetypes.index', sub_page='weenie-aus') }}">Weenie AUS</a></td>
                 <td>(Wall)</td>
             </tr>
             <tr>
-                <td><a href="weenie-dem.html">Weenie DEM</a></td>
+                <td><a href="{{ url_for('archetypes.index', sub_page='weenie-dem') }}">Weenie DEM</a></td>
                 <td>(Stealth & Bleed)</td>
             </tr>
             <tr>
-                <td><a href="weenie-dom.html">Weenie DOM</a></td>
+                <td><a href="{{ url_for('archetypes.index', sub_page='weenie-dom') }}">Weenie DOM</a></td>
                 <td>(Swarm Bleed)</td>
             </tr>
         </tbody>
@@ -247,8 +247,8 @@
 
 {% block footer %}
     <nav role="navigation">
-        <a class="prev" href="{{ url_for('strategy.index') }}">Strategy</a>
-        <a href="../index.html">Home</a>
-        <a class="next" href="../best-cards/index.html">Best Cards</a>
+        <a class="prev" href="{{ url_for('archetypes.index', sub_page='{{ url_for('strategy.index') }}">Strategy</a>
+        <a href="{{ url_for('archetypes.index', sub_page='../index') }}">Home</a>
+        <a class="next" href="{{ url_for('archetypes.index', sub_page='../best-cards/index') }}">Best Cards</a>
     </nav>
 {% endblock %}
