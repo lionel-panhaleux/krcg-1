@@ -21,6 +21,11 @@ pybabel extract -F codex/babel.cfg -o codex/messages.pot codex
 pybabel init -i codex/messages.pot -d codex/translations -l fr
 ```
 
+## Updating a current translations
+```shell
+pybabel update -i codex/messages.pot -d codex/translations -l fr
+```
+
 ## Compiling translation
 ```shell
 pybabel compile -d codex/translations
