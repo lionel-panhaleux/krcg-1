@@ -1,4 +1,4 @@
-{% extends "layout') }}" %}
+{% extends "layout.html" %}
 
 {% block head %}
     {{ super() }}
@@ -11,7 +11,7 @@
     <p>
         Here is a list of <strong>Vampire: the Eternal Struggle</strong> deck archetypes.
         Every archetype is presented with
-        <a target="_blank" href="{{ url_for('archetypes.index', sub_page='http://www.vekn.fr/decks/twd.htm">Tournament Winning Deck Archive (TWDA)</a>
+        <a target="_blank" href="http://www.vekn.fr/decks/twd.htm">Tournament Winning Deck Archive (TWDA)</a>
         deck list examples, main variations, and a play guide.
     </p>
     <p>
@@ -21,7 +21,7 @@
     </p>
     <p>
         If you're searching for other ideas or references, the
-        <a target="_blank" href="{{ url_for('archetypes.index', sub_page='https://drive.google.com/drive/folders/0B32R3iejqMPTaXNDd2d1b01lR1k">Bibliodèque</a>
+        <a target="_blank" href="https://drive.google.com/drive/folders/0B32R3iejqMPTaXNDd2d1b01lR1k">Bibliodèque</a>
         is a French project based on the TWDA that references 99 archetypes with example decklists,
         to help people building decks for their casual play or tournaments.
     </p>
@@ -247,8 +247,8 @@
 
 {% block footer %}
     <nav role="navigation">
-        <a class="prev" href="{{ url_for('archetypes.index', sub_page='{{ url_for('strategy.index') }}">Strategy</a>
-        <a href="{{ url_for('archetypes.index', sub_page='../index') }}">Home</a>
-        <a class="next" href="{{ url_for('archetypes.index', sub_page='../best-cards/index') }}">Best Cards</a>
+        <a class="prev" href="{{ url_for('archetypes.index') }}">Strategy</a>
+        <a href="{{ url_for('index') }}">Home</a>
+        <a class="next" href="../best-cards/index.html">Best Cards</a>
     </nav>
 {% endblock %}
