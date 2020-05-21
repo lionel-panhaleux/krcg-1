@@ -7,6 +7,10 @@ OR
 {{ gettext('Hello World') }}
 ```
 
+## PyBabel Command Line
+
+[Documentation](http://babel.pocoo.org/en/latest/cmdline.html)
+
 ## Extracting text
 ```shell
 pybabel extract -F codex/babel.cfg -o codex/messages.pot codex
