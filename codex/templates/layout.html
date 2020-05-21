@@ -30,9 +30,13 @@
         </ul>
     </nav>
 </header>
+
+{% block card_display %}
 <div id="card-modal" class="modal" onclick="this.style.display='none'">
-        <img class="modal-content" id="card-image">
+	<img class="modal-content" id="card-image">
 </div>
+{% endblock %}
+
 <article>
     {% block content %}{% endblock %}
 </article>
@@ -46,4 +50,5 @@
     {% endblock %}
 </footer>
 </body>
+{% block script %}{% endblock %}
 </html>
