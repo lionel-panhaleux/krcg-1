@@ -70,7 +70,9 @@ For example
 {%- endmacro %}
 ```
 
-## The case of `Pentex(TM) Subversion`
+
+## Edits Fri, May 22nd
+**EDIT 1: The case of `Pentex(TM) Subversion`**
 
 It appeared that the above card has two different texts depending on the impact of the change. The new macro would be
 
@@ -93,3 +95,15 @@ It appeared that the above card has two different texts depending on the impact 
 {% endif %}
 {%- endmacro %}
 ```
+
+**EDIT 2: The `{% if %}` test does not work**
+
+I ran the script and got the following error
+
+```shell+python
+File "/Users/spigushe/Documents/Codex-of-the-Damned/krcg/codex/archetypes/templates/layout-erratum.html", line 2, in template
+    {% if solution is 'remove' %}
+jinja2.exceptions.TemplateSyntaxError: expected token 'name', got 'string'
+```
+
+The correct test is: `{% if solution is 'remove' %}`. Going back to Jinja2 documentation, the `is` keyword is meant for [tests](https://jinja.palletsprojects.com/en/2.11.x/templates/#tests). The correct operator for this [comparison](https://jinja.palletsprojects.com/en/2.11.x/templates/#comparisons) is indeed `==`.
