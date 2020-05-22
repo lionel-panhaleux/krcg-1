@@ -25,3 +25,11 @@
 
 	{% block errata %}{% endblock %}
 {% endblock %}
+
+{% block footer %}
+<nav role="navigation">
+	{% block previous %}{% endblock%}
+	<a href=" {{url_for('archetypes.index') }}">Archetypes</a>
+	{% block next %}{% endblock %}
+</nav>
+{% endblock %}
