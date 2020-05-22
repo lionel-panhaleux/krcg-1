@@ -47,7 +47,7 @@ As it did not reduce the number of lines of the document, it fulfills its role a
 
 *it will be tomorrow's task to rewrite every page this way as I feel it to be prettier*
 
-## What can be upgrading
+## What can be upgraded
 
 The 'root' layout file sets the `footer` block as follow:
 
