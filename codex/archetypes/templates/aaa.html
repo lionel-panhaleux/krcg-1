@@ -1,13 +1,6 @@
 {% extends "layout-archetypes.html" %}
 {% import "layout-erratum.html" as erratum %}
 
-{% block head %}
-    {{ super() }}
-    <!-- Adding needed scripts -->
-    <script src="{{ url_for('static', filename='js/dC.js') }}"></script>
-	<script src="{{ url_for('static', filename='js/decklist.js') }}"></script>
-{% endblock %}
-
 {% block archetype_name %}
 <h1><img src="{{ url_for('static', filename='img/icons/clan-toreador.svg') }}"> AAA</h1>
 {% endblock %}

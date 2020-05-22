@@ -1,5 +1,12 @@
 {% extends "layout.html" %}
 
+{% block head %}
+    {{ super() }}
+    <!-- Adding needed scripts -->
+    <script src="{{ url_for('static', filename='js/dC.js') }}"></script>
+	<script src="{{ url_for('static', filename='js/decklist.js') }}"></script>
+{% endblock %}
+
 {% block card_display %}
 <div id="card-modal" class="modal" onclick="this.style.display='none'" tabindex="-1">
 	<div id=card-prev class="modal-nav">&#xf077</div>
