@@ -4,6 +4,7 @@ from flask_babel import Babel
 # Importing modules
 from codex.strategy.controllers import strategy
 from codex.archetypes.controllers import archetypes
+from codex.deck_search.controllers import deck_search
 
 # Importing configuration
 from codex.config import configure_app
@@ -57,3 +58,5 @@ app.register_blueprint(strategy, url_prefix='/strategy')
 app.register_blueprint(strategy, url_prefix="/<lang_code>/strategy")
 app.register_blueprint(archetypes, url_prefix='/archetypes')
 app.register_blueprint(archetypes, url_prefix="/<lang_code>/archetypes")
+app.register_blueprint(deck_search, url_prefix='/deck-search')
+app.register_blueprint(deck_search, url_prefix="/<lang_code>/deck-search")
