@@ -46,3 +46,50 @@ Even if it is just to have this tiny bit of templating: (*strategy section*)
 As it did not reduce the number of lines of the document, it fulfills its role as only representing what is changing.
 
 *it will be tomorrow's task to rewrite every page this way as I feel it to be prettier*
+
+## What can be upgrading
+
+The 'root' layout file sets the `footer` block as follow:
+
+```html+jinja
+<footer>
+    {% block footer %}
+    <img src="{{ url_for('static', filename='img/icons/dark-pack.png') }}">
+    <p>
+        {{ _('Portions of the materials are the copyrights and trademarks of Paradox Interactive AB, and are used with permission. All rights reserved. For more information please visit') }}
+        <a target="_blank" href="http://white-wolf.com">white-wolf.com</a>.
+    </p>
+    {% endblock %}
+</footer>
+```
+
+The whole navbar system could be digged deeper:
+
+**root layout.html**
+```html+jinja
+<footer>
+    {% block footer %}
+        {% block previous %}{% endblock %}
+        {% block current %}
+    <img src="{{ url_for('static', filename='img/icons/dark-pack.png') }}">
+    <p>
+        {{ _('Portions of the materials are the copyrights and trademarks of Paradox Interactive AB, and are used with permission. All rights reserved. For more information please visit') }}
+        <a target="_blank" href="http://white-wolf.com">white-wolf.com</a>.
+    </p>
+        {% endblock %}
+        {% block next %}{% endblock %}
+    {% endblock %}
+</footer>
+```
+
+**layout-strategy.html**
+```html+jinja
+{% extends "layout.html" %}
+
+{% block current %}
+    <a href="{{ url_for('strategy.index') }}">Strategy</a>
+{% endblock %}
+```
+
+Pro: it does help to deal with redundant nav links
+Con: it render the templated file less readable
