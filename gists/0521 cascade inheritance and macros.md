@@ -69,3 +69,27 @@ For example
 </p>
 {%- endmacro %}
 ```
+
+## The case of `Pentex(TM) Subversion`
+
+It appeared that the above card has two different texts depending on the impact of the change. The new macro would be
+
+```html+jinja2
+{% macro pentextmsubversion( solution = "remove" ) -%}
+{% if solution is 'remove' %}
+<p>
+    <span class="card" onclick="dC('pentextmsubversion')">Pentex™ Subversion</span>
+    has been modified by an <em>errata</em> in September 2019.
+    It does not prevent a vampire to act anymore, so it is less powerful and should probably
+    not be included in the deck.
+</p>
+{% else %}
+<p>
+    <span class="card" onclick="dC('pentextmsubversion')">Pentex™ Subversion</span>
+    has been modified by an <em>errata</em> in September 2019.
+    It does not prevent a vampire to act anymore, so it is less powerful but still has its place in the deck,
+    as it was mainly used as a way to disable a blocker anyway.
+</p>
+{% endif %}
+{%- endmacro %}
+```
