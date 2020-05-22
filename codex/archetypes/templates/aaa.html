@@ -8,7 +8,6 @@
 	<script src="{{ url_for('static', filename='js/decklist.js') }}"></script>
 {% endblock %}
 
-
 {% block archetype_name %}
 <h1><img src="{{ url_for('static', filename='img/icons/clan-toreador.svg') }}"> AAA</h1>
 {% endblock %}
@@ -56,44 +55,41 @@
 <p>
     The <strong>Anson Guns</strong> variant focuses on <span class="card" onclick="dC('anson')">Anson</span>
     and drops its Toreador companions to get cheaper vampires with <i>C</i>, like in
-    <a href="../deck-search/index.html?twda_id=2019pncwp">Tomasz Izydorczyk's deck</a> from 2019.
+    <a href="{{ url_for('deck_search.index', twda_id='2019pncwp') }}">Tomasz Izydorczyk's deck</a> from 2019.
 </p>
 <p>
     The <strong>Grand Ball</strong> variant ditches the combat module and uses
     <span class="card" onclick="dC('alexandra')">Alexandra</span>'s ability with
     <span class="card" onclick="dC('toreadorgrandball')">Toreador Grand Ball</span> to provide unblockable
-    votes, like in <a href="../deck-search/index.html?twda_id=2013cncpf2">Martin Miller's deck</a> from 2013.
+    votes, like in <a href="{{ url_for('deck_search.index', twda_id='2013cncpf2') }}">Martin Miller's deck</a> from 2013.
 </p>
 <p>
     The <strong>Aching Beauty</strong> variant also replaces the combat module with defensive
     <span class="card" onclick="dC('majesty')">Majesty</span>, but uses
     <span class="card" onclick="dC('achingbeauty')">Aching Beauty</span> in numbers to make the vampires actions
-    hard to block, like in <a href="../deck-search/index.html?twda_id=2012ecsod">László Walter's deck</a> from 2012.
+    hard to block, like in <a href="{{ url_for('deck_search.index', twda_id='2012ecsod') }}">László Walter's deck</a> from 2012.
 </p>
 <p>
     The <strong>AAAAA</strong> variant keeps <span class="card" onclick="dC('alexandra')">Alexandra</span> and
     <span class="card" onclick="dC('anneke')">Anneke</span> and uses the
     <span class="card" onclick="dC('alastor')">Alastor</span> +
     <span class="card" onclick="dC('assaultrifle')">Assault Rifle</span> combination (hence the five "A"),
-    like in <a href="../deck-search/index.html?twda_id=2010kaldecq">Izaak Havelaar's deck</a> from 2010.
+    like in <a href="{{ url_for('deck_search.index', twda_id='2010kaldecq') }}">Izaak Havelaar's deck</a> from 2010.
 </p>
 {% endblock %}
 
 {% block errata %}
 <div class="warning">
     <h3>Errata</h3>
-    {{ erratum.pentextmsubversion() }}
+    {{ erratum.pentextmsubversion( 'remove' ) }}
     {{ erratum.villein() }}
     {{ erratum.parityshift() }}
 	{{ erratum.antheliostheredstar() }}
 </div>
 {% endblock %}
 
-{% block footer %}
-    <nav role="navigation">
-        <a href="index.html">Archetypes</a>
-        <a class="next" href="akunanse-wall.html">Akunanse Wall</a>
-    </nav>
+{% block next %}
+    <a class="next" href="{{ url_for('archetypes.index', sub_page='akunanse-wall') }}'">Akunanse Wall</a>
 {% endblock %}
 
 {% block script %}
