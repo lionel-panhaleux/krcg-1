@@ -1,4 +1,4 @@
-from flask import abort, Flask, g, render_template, current_app
+from flask import abort, Flask, g, render_template, current_app, abort
 from flask_babel import Babel
 
 # Importing modules
@@ -46,6 +46,12 @@ def ensure_lang_support():
     lang_code = g.get('lang_code', None)
     if lang_code and lang_code not in app.config['SUPPORTED_LANGUAGES'].keys():
         return abort(404)
+
+
+# Defining Errors
+@app.errorhandler(404)
+def page_not_found(error):
+    return render_template('404.html'), 404
 
 ## Default route
 @app.route("/")
