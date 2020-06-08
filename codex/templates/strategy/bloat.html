@@ -1,9 +1,9 @@
 {% extends "layout.html" %}
 
 {% block head %}
-    {{ super() }}
-    <!-- Adding needed scripts -->
-    <script src="{{ url_for('static', filename='js/dC.js') }}"></script>
+{{ super() }}
+<!-- Adding needed scripts -->
+<script src="{{ url_for('static', filename='js/dC.js') }}"></script>
 {% endblock %}
 
 {% block content %}
@@ -17,8 +17,8 @@
 </p>
 <h2 id="leeching">Leeching</h2>
 <p>
-Getting pool back by taking blood from one’s minions — commonly known as <strong>leeching</strong> —
-is the most common way to bloat. This technique makes use of the following Master cards:
+    Getting pool back by taking blood from one’s minions — commonly known as <strong>leeching</strong> —
+    is the most common way to bloat. This technique makes use of the following Master cards:
 </p>
 <ul>
     <li class="card" onclick="dC('miniontap')">Minion Tap</li>
@@ -37,11 +37,11 @@ is the most common way to bloat. This technique makes use of the following Maste
     </li>
 </ul>
 <p>
-It does take some Master cards slots out in a deck, and it leaves your minions somewhat weakened.
-Still, a vampire may act and use all its disciplines even with only 1 blood left.
-The two trifles, <span class="card" onclick="dC('villein')">Villein</span> and
-<span class="card" onclick="dC('vessel')">Vessel</span>, are appealing as they do not use up a Master
-card slot, but they are a bit less efficient thant their plain counterparts.
+    It does take some Master cards slots out in a deck, and it leaves your minions somewhat weakened.
+    Still, a vampire may act and use all its disciplines even with only 1 blood left.
+    The two trifles, <span class="card" onclick="dC('villein')">Villein</span> and
+    <span class="card" onclick="dC('vessel')">Vessel</span>, are appealing as they do not use up a Master
+    card slot, but they are a bit less efficient thant their plain counterparts.
 </p>
 <div class="warning">
     <h3>Villein errata</h3>
@@ -166,8 +166,8 @@ card slot, but they are a bit less efficient thant their plain counterparts.
         (<img src="{{ url_for('static', filename='img/icons/clan-giovanni.svg') }}">)
     </li>
     <li>
-    <span class="card" onclick="dC('greatsymposium')">Great Symposium</span>
-    (<img src="{{ url_for('static', filename='img/icons/clan-kiasyd.svg') }}">)
+        <span class="card" onclick="dC('greatsymposium')">Great Symposium</span>
+        (<img src="{{ url_for('static', filename='img/icons/clan-kiasyd.svg') }}">)
     </li>
     <li>
         <span class="card" onclick="dC('churchofvindicatedfaiththe')">The Church of Vindicated Faith</span>
@@ -235,7 +235,8 @@ card slot, but they are a bit less efficient thant their plain counterparts.
 <p>
     Actions getting blood on uncontrolled vampires with no alternative are less efficient.
     They can still come in handy when used in swarm constructs to get many vampiers out quickly, as is the case for
-    <img src="{{ url_for('static', filename='img/icons/clan-toreador-anti.svg') }}">  <span class="card" onclick="dC('artscam')">Art Scam</span> and
+    <img src="{{ url_for('static', filename='img/icons/clan-toreador-anti.svg') }}"> <span class="card"
+        onclick="dC('artscam')">Art Scam</span> and
     Black Hand <span class="card" onclick="dC('reunionkamut')">Reunion Kamut</span>, but otherwise they
     are only used sparsingly. <img src="{{ url_for('static', filename='img/icons/clan-guruhi.svg') }}">
     <span class="card" onclick="dC('foundersoftheebonykingdom')">Founders of the Ebony Kingdom</span>
@@ -288,12 +289,4 @@ card slot, but they are a bit less efficient thant their plain counterparts.
     The same logic applies to stopping pool generating political actions with
     <span class="card" onclick="dC('delayingtactics')">Delaying Tactics</span>.
 </p>
-{% endblock %}
-
-{% block footer %}
-    <nav role="navigation">
-        <a class="prev" href="/strategy/combat">Combat</a>
-        <a href="/strategy">Strategy</a>
-        <a class="next" href="/strategy/deck-building">Deck building</a>
-    </nav>
 {% endblock %}
